@@ -9,21 +9,23 @@
 
 <ul>
 
-  <li><a href="ws://socket.example.com46">WS 46</a></li>
-  <li><a href="ws://socket.example.com:808047">WS + port 47</a></li>
-  <li><a href="wss://secure-socket.example.com48">WSS 48</a></li>
-  <li><a href="wss://secure-socket.example.com:44349">WSS + port 49</a></li>
-  <li><a href="wss://example.com/path?query=1#frag50">WSS + query + fragment 50</a></li>
+  <li><a href="ftp://ftp.example.com/file41.txt">FTP 41</a></li>
+  <li><a href="ftp://user:pass@ftp.example.com/file42">FTP auth 42</a></li>
+  <li><a href="ftp://example.com:2121/file43">FTP port 43</a></li>
+  <li><a href="ftp://ftp.example.com/space%20file44">FTP encoded space 44</a></li>
+  <li><a href="ftp://ftp.example.com/../weird45">FTP relative dots 45</a></li>
 
 
-    <li><a href="ws://socket.example.com:12396/path">WS + port + path 96</a></li>
-  <li><a href="wss://socket.example.com:44397/path">WSS + port + path 97</a></li>
+  <li><a href="ftp://ftp.example.com/strange%20file65">FTP encoded 65</a></li>
 
 
-  <li><a href="ws://socket.example.com:8080/live27">WS 8080 (27)</a></li>
-<li><a href="ws://socket.example.com:1234/chat28">WS 1234 (28)</a></li>
-<li><a href="wss://secure.example.com:4433/api29">WSS 4433 (29)</a></li>
-<li><a href="wss://example.com:9443/ws30?x=1">WSS 9443 + query (30)</a></li>
+  <li><a href="ftp://example.com/file with space86.txt">FTP space 86</a></li>
+
+
+  <!-- FTP with ports -->
+<li><a href="ftp://example.com:21/file24.txt">FTP port 21 (24)</a></li>
+<li><a href="ftp://example.com:2121/file25">FTP 2121 (25)</a></li>
+<li><a href="ftp://user:pass@host:2021/file26">FTP auth + port (26)</a></li>
   
 </ul>
 </body>
