@@ -10,23 +10,17 @@
 <ul>
 
   <!-- Rare/malformed -->
-<li><a href="http://example.com/uniçode84">Unicode char 84</a></li>
-  <li><a href="/%E6%B5%8B%E8%AF%953.html">UTF-8 encoded 85</a></li>
-  <li><a href="ftp://example.com/file with space86.txt">FTP space 86</a></li>
-  <li><a href="/dots..dots87.html">Multiple dots 87</a></li>
-  <li><a href="//example.com/path#frag88">Protocol-relative fragment 88</a></li>
-  <li><a href="/page?param[]=1&param[]=289">Array query 89</a></li>
-  <li><a href="/page?x=1&y=2#frag90">Query + fragment 90</a></li>
-  <li><a href="/longpath/.../.../.../page91.html">Long nested 91</a></li>
-  <li><a href="/weird_chars/!@#$%^&*()_+92.html">Special chars 92</a></li>
-  <li><a href="/mixed-case/File93.HTML">Mixed case 93</a></li>
-  <li><a href="/trailingdot....94.html">Trailing dots 94</a></li>
-  <li><a href="/weird;chars95.html">Semicolon 95</a></li>
-  <li><a href="ws://socket.example.com:12396/path">WS + port + path 96</a></li>
-  <li><a href="wss://socket.example.com:44397/path">WSS + port + path 97</a></li>
-  <li><a href="myapp://action/resource98?param=value">Custom scheme + query 98</a></li>
-  <li><a href="javascript:alert('almost100')">JS 99</a></li>
-  <li><a href="#last100">Fragment 100</a></li>
+<!-- Malformed / Rare -->
+<li><a href="">Empty (33)</a></li>
+<li><a href="'javascript:bad34">Malformed (34)</a></li>
+<li><a href="http://example.com:81/space%20file35">Encoded space + port (35)</a></li>
+<li><a href="http://example.com:65000/maxport36">Max valid port (36)</a></li>
+<li><a href="//example.com:0/invalid37">Port 0 (rare) (37)</a></li>
+<li><a href="//example.com:65535/extreme38">Port 65535 (38)</a></li>
+<li><a href="http://user:pass@example.com:8080/auth39">User/pass + port (39)</a></li>
+<li><a href="/local/path:8080/file40">Colon in path (40)</a></li>
+<li><a href="http://example.com:8080:9090/weird41">Malformed double port (41)</a></li>
+<li><a href="//xn--punycode-hwa.com:8080/page42">Punycode + port (42)</a></li>
 
   
 </ul>
