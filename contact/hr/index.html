@@ -10,24 +10,34 @@
 <ul>
 
   <!-- Rare/malformed -->
-  <li><a href="">Empty 56</a></li>
-  <li><a href="'javascript:malformed57">Malformed 57</a></li>
-  <li><a href="http://example.com/..//weird58">Double dots 58</a></li>
-  <li><a href="http://example.com/space%20here59">Encoded space 59</a></li>
-  <li><a href="http://example.com/path with space60.html">Space in path 60</a></li>
-  <li><a href="mailto:test@@example.com61">Double @ 61</a></li>
-  <li><a href="http://user:pass@host62.com">Auth + domain 62</a></li>
-  <li><a href="//example.com:8080/path63">Protocol-relative + port 63</a></li>
-  <li><a href="https://example.com/multi//slash64">Double slashes 64</a></li>
-  <li><a href="ftp://ftp.example.com/strange%20file65">FTP encoded 65</a></li>
-  <li><a href="ftp://ftp.example.com/strange%20fiels65">FTP encoded 655</a></li>
-  <li><a href="//example.com/emoji-🔥66">Emoji 66</a></li>
-  <li><a href="/unicode/测试67.html">Unicode 67</a></li>
-  <li><a href="mailto:weird+alias68@example.com">Email alias 68</a></li>
-  <li><a href="tel:+123-456-789069">Phone dash 69</a></li>
-  <li><a href="sms:+123.456.789070">SMS dots 70</a></li>
-  <li><a href="javascript:alert('XSS71')">JS XSS 71</a></li>
-  <li><a href="javascript:console.log('test72')">JS console 72</a></li>
+<li><a href="/page-with-dots...73.html">Dots filename 73</a></li>
+  <li><a href="http://example.com/verylongpath/...74">Very long path 74</a></li>
+  <li><a href="/weird|chars75.html">Pipe char 75</a></li>
+  <li><a href="/semi;colon76.html">Semicolon 76</a></li>
+  <li><a href="/percent%2577.html">Double encoded percent 77</a></li>
+  <li><a href="/quotes'78.html">Single quote 78</a></li>
+  <li><a href="/doublequotes&quot;79.html">Double quote 79</a></li>
+  <li><a href="javascript:eval('alert(80)')">JS eval 80</a></li>
+  <li><a href="mailto:info@example.com?subject=Test81">Email + query 81</a></li>
+  <li><a href="/weird path/encoded%2082.html">Nested + encoded space 82</a></li>
+  <li><a href="//xn--fsq.com83">IDN Punycode 83</a></li>
+  <li><a href="http://example.com/uniçode84">Unicode char 84</a></li>
+  <li><a href="/%E6%B5%8B%E8%AF%953.html">UTF-8 encoded 85</a></li>
+  <li><a href="ftp://example.com/file with space86.txt">FTP space 86</a></li>
+  <li><a href="/dots..dots87.html">Multiple dots 87</a></li>
+  <li><a href="//example.com/path#frag88">Protocol-relative fragment 88</a></li>
+  <li><a href="/page?param[]=1&param[]=289">Array query 89</a></li>
+  <li><a href="/page?x=1&y=2#frag90">Query + fragment 90</a></li>
+  <li><a href="/longpath/.../.../.../page91.html">Long nested 91</a></li>
+  <li><a href="/weird_chars/!@#$%^&*()_+92.html">Special chars 92</a></li>
+  <li><a href="/mixed-case/File93.HTML">Mixed case 93</a></li>
+  <li><a href="/trailingdot....94.html">Trailing dots 94</a></li>
+  <li><a href="/weird;chars95.html">Semicolon 95</a></li>
+  <li><a href="ws://socket.example.com:12396/path">WS + port + path 96</a></li>
+  <li><a href="wss://socket.example.com:44397/path">WSS + port + path 97</a></li>
+  <li><a href="myapp://action/resource98?param=value">Custom scheme + query 98</a></li>
+  <li><a href="javascript:alert('almost100')">JS 99</a></li>
+  <li><a href="#last100">Fragment 100</a></li>
 
   
 </ul>
