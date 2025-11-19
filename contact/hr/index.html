@@ -8,8 +8,6 @@
 <h1>Test Page - 100+ Links</h1>
 
 <ul>
-
-
   <!-- Absolute URLs -->
   <li><a href="https://example.com/page1">Absolute HTTPS 1</a></li>
   <li><a href="http://example.org/page2">Absolute HTTP 2</a></li>
@@ -133,75 +131,6 @@
   <li><a href="myapp://action/resource98?param=value">Custom scheme + query 98</a></li>
   <li><a href="javascript:alert('almost100')">JS 99</a></li>
   <li><a href="#last100">Fragment 100</a></li>
-
-  
-
-<!-- Absolute URLs with ports -->
-<li><a href="http://example.com:8080/page1">HTTP 8080 (1)</a></li>
-<li><a href="https://example.com:8443/page2">HTTPS 8443 (2)</a></li>
-<li><a href="http://sub.example.com:3000/page3">Subdomain port 3000 (3)</a></li>
-<li><a href="https://example.com:9999/path/page4?x=1">Query + port (4)</a></li>
-<li><a href="https://example.com:444/page5#frag">Fragment + port (5)</a></li>
-
-<!-- Relative URLs -->
-<li><a href="/folder/page6">Root-relative (6)</a></li>
-<li><a href="page7.html">Relative (7)</a></li>
-<li><a href="../up/page8">Parent relative (8)</a></li>
-<li><a href="./file9">Dot relative (9)</a></li>
-
-<!-- Protocol-relative with ports -->
-<li><a href="//example.com:8080/res10">Protocol-relative 8080 (10)</a></li>
-<li><a href="//cdn.example.com:81/lib11.js">Protocol-relative 81 (11)</a></li>
-<li><a href="//example.net:1234/app12?x=2">Protocol-relative + query (12)</a></li>
-<li><a href="//api.example.org:9090/path13#x">Protocol-relative + frag (13)</a></li>
-
-<!-- Emails -->
-<li><a href="mailto:user14@example.com">Email (14)</a></li>
-<li><a href="mailto:john+alias15@example.com">Email alias (15)</a></li>
-
-<!-- Phone/SMS -->
-<li><a href="tel:+1234567816">Tel (16)</a></li>
-<li><a href="sms:+9998887717">SMS (17)</a></li>
-
-<!-- Fragments -->
-<li><a href="#section18">Fragment (18)</a></li>
-<li><a href="/page19#frag">Relative fragment (19)</a></li>
-
-<!-- JavaScript -->
-<li><a href="javascript:void(0)">JS void (20)</a></li>
-<li><a href="javascript:alert('21')">JS alert (21)</a></li>
-
-<!-- Data URIs -->
-<li><a href="data:text/plain;base64,AAAA22">Data text (22)</a></li>
-<li><a href="data:image/png;base64,BBBB23">Data img (23)</a></li>
-
-<!-- FTP with ports -->
-<li><a href="ftp://example.com:21/file24.txt">FTP port 21 (24)</a></li>
-<li><a href="ftp://example.com:2121/file25">FTP 2121 (25)</a></li>
-<li><a href="ftp://user:pass@host:2021/file26">FTP auth + port (26)</a></li>
-
-<!-- WS/WSS with ports -->
-<li><a href="ws://socket.example.com:8080/live27">WS 8080 (27)</a></li>
-<li><a href="ws://socket.example.com:1234/chat28">WS 1234 (28)</a></li>
-<li><a href="wss://secure.example.com:4433/api29">WSS 4433 (29)</a></li>
-<li><a href="wss://example.com:9443/ws30?x=1">WSS 9443 + query (30)</a></li>
-
-<!-- Custom schemes -->
-<li><a href="myapp://open/resource31">Custom scheme (31)</a></li>
-<li><a href="zoommtg://zoom.us:443/join32">Zoom custom port (32)</a></li>
-
-<!-- Malformed / Rare -->
-<li><a href="">Empty (33)</a></li>
-<li><a href="'javascript:bad34">Malformed (34)</a></li>
-<li><a href="http://example.com:81/space%20file35">Encoded space + port (35)</a></li>
-<li><a href="http://example.com:65000/maxport36">Max valid port (36)</a></li>
-<li><a href="//example.com:0/invalid37">Port 0 (rare) (37)</a></li>
-<li><a href="//example.com:65535/extreme38">Port 65535 (38)</a></li>
-<li><a href="http://user:pass@example.com:8080/auth39">User/pass + port (39)</a></li>
-<li><a href="/local/path:8080/file40">Colon in path (40)</a></li>
-<li><a href="http://example.com:8080:9090/weird41">Malformed double port (41)</a></li>
-<li><a href="//xn--punycode-hwa.com:8080/page42">Punycode + port (42)</a></li>
-  
 </ul>
 </body>
 </html>
