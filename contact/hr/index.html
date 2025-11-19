@@ -9,18 +9,12 @@
 
 <ul>
 
-  <!-- Rare/malformed -->
-<!-- Malformed / Rare -->
-<li><a href="">Empty (33)</a></li>
-<li><a href="'javascript:bad34">Malformed (34)</a></li>
-<li><a href="http://example.com:81/space%20file35">Encoded space + port (35)</a></li>
-<li><a href="http://example.com:65000/maxport36">Max valid port (36)</a></li>
-<li><a href="//example.com:0/invalid37">Port 0 (rare) (37)</a></li>
-<li><a href="//example.com:65535/extreme38">Port 65535 (38)</a></li>
-<li><a href="http://user:pass@example.com:8080/auth39">User/pass + port (39)</a></li>
-<li><a href="/local/path:8080/file40">Colon in path (40)</a></li>
-<li><a href="http://example.com:8080:9090/weird41">Malformed double port (41)</a></li>
-<li><a href="//xn--punycode-hwa.com:8080/page42">Punycode + port (42)</a></li>
+<!-- Emails -->
+  <li><a href="mailto:test16@example.com">Email 16</a></li>
+  <li><a href="mailto:user+alias17@example.com">Email + alias 17</a></li>
+  <li><a href="mailto:test..18@example.com">Double dot email 18</a></li>
+  <li><a href="mailto:test19@sub.example.com">Subdomain email 19</a></li>
+  <li><a href="mailto:weird@chars!#$%&'*+/=?^_`{}|~.20">Special chars email 20</a></li>
 
   
 </ul>
